@@ -23,7 +23,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This is a fork of the [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository. This version uses [Vitest](https://vitest.dev/) for unit testing instead of Jest. Vitest performs faster and requires less configuration than Jest, particularly with respect to Typescript projects. Familiarity with Jest should make the transition to Vitest easy. [Read more](https://vitest.dev/guide/why.html) about why Vitest is a good choice.
 
 ## Project setup
 
