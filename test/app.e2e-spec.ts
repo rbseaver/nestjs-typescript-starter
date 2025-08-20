@@ -3,11 +3,12 @@ import { Test } from '@nestjs/testing';
 import * as request from 'supertest';
 import { App } from 'supertest/types';
 import { AppModule } from './../src/app.module';
+import { before } from 'mocha';
 
 describe('AppController (e2e)', () => {
   let app: INestApplication<App>;
 
-  beforeAll(async () => {
+  before(async () => {
     const moduleFixture = await Test.createTestingModule({
       imports: [AppModule],
     }).compile();
@@ -16,7 +17,7 @@ describe('AppController (e2e)', () => {
     await app.init();
   });
 
-  afterAll(async () => {
+  after(async () => {
     await app.close();
   });
 
